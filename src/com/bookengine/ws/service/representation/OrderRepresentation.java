@@ -1,16 +1,18 @@
-package com.bookengine.ws;
-
-import java.util.Set;
+package com.bookengine.ws.service.representation;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlRootElement
-//@XmlAccessorType(XmlAccessType.FIELD)
-//@XmlType(name = "")
-public class Order {
+import com.bookengine.ws.Customer;
+import com.bookengine.ws.PaymentInfo;
+
+
+@XmlRootElement(name = "Order")
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "")
+public class OrderRepresentation {
 
 	private String orderID;
 	private String bookID;
@@ -18,11 +20,11 @@ public class Order {
 	private Customer customer = new Customer();
 	private PaymentInfo paymentinfo = new PaymentInfo();
 	
-	public Order()
+	public OrderRepresentation()
 	{
 		
 	}
-	 
+	
 	public Order(String orderID, String bookID, String status, Customer customer, PaymentInfo paymentinfo)
 	{
 		this.orderID = orderID;

@@ -17,8 +17,7 @@ public class BookResource implements BookService {
 	@Produces({ "application/xml", "application/json" })
 	@Path("/book")
 	public Set<BookRepresentation> getBooks() {
-		System.out
-				.println("GET METHOD Request for all books .............");
+		System.out.println("GET METHOD Request for all books .............");
 		BookActivity bookActivity = new BookActivity();
 		return bookActivity.getBooks();
 	}
@@ -27,8 +26,7 @@ public class BookResource implements BookService {
 	@Produces({ "application/xml", "application/json" })
 	@Path("/book/{bookId}")
 	public BookRepresentation getBook(@PathParam("bookId") String bookId) {
-		System.out
-				.println("GET METHOD Request from Client with bookRequest String ............."
+		System.out.println("GET METHOD Request from Client with bookRequest String ............."
 						+ bookId);
 		BookActivity bookActivity = new BookActivity();
 		return bookActivity.getBook(bookId);
