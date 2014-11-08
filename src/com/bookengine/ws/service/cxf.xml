@@ -30,4 +30,4 @@
 	</jaxrs:server>
   	<bean id="bookServiceRest" class="com.bookengine.ws.service.BookResource" />
   
-</beans>
+
