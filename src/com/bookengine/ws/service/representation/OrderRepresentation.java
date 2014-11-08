@@ -25,14 +25,14 @@ public class OrderRepresentation {
 		
 	}
 	
-	public Order(String orderID, String bookID, String status, Customer customer, PaymentInfo paymentinfo)
+	/*public Order(String orderID, String bookID, String status, Customer customer, PaymentInfo paymentinfo)
 	{
 		this.orderID = orderID;
 		this.bookID = bookID;
 		this.status = status;
 		this.customer = customer;
 		this.paymentinfo = paymentinfo;
-	}
+	}*/
 
 	public String getOrderID() {
 		return orderID;

@@ -54,9 +54,10 @@ public final class BookServiceClient {
         //System.out.println("privileges:" + employee.getPrivileges());
         
          
-		Book book = getClient.get(Book.class);
-         System.out.println("Book Name:" +book.getBookName());
-         System.out.println("Book Name:" +book.getAuthorName());
+//		Book book = getClient.get(Book.class);
+//         System.out.println("Book Name:" +book.getBookName());
+//         System.out.println("Book Name:" +book.getAuthorName());
          
+         System.exit(0);
 }
 }

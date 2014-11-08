@@ -14,7 +14,7 @@ public class BookActivity {
 
 	private static BookDAO dao = new BookDAO();
 
-	public Set<BookRepresentation> getBooks() {
+	public Set<BookRepresentation> searchAllBooks() {
 
 		List<Book> books = new ArrayList<Book>();
 		Set<BookRepresentation> bookRepresentations = new HashSet<BookRepresentation>();
@@ -35,7 +35,7 @@ public class BookActivity {
 		return bookRepresentations;
 	}
 
-	public BookRepresentation getBook(String id) {
+	public BookRepresentation searchId(String id) {
 
 		Book book = dao.searchId(id);
 
