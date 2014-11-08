@@ -16,20 +16,20 @@ public class BookResource implements BookService {
 	@GET
 	@Produces({ "application/xml", "application/json" })
 	@Path("/book")
-	public Set<BookRepresentation> getBooks() {
+	public Set<BookRepresentation> searchAllBooks() {
 		System.out.println("GET METHOD Request for all books .............");
 		BookActivity bookActivity = new BookActivity();
-		return bookActivity.getBooks();
+		return bookActivity.searchAllBooks();
 	}
 
 	@GET
 	@Produces({ "application/xml", "application/json" })
 	@Path("/book/{bookId}")
-	public BookRepresentation getBook(@PathParam("bookId") String bookId) {
+	public BookRepresentation searchId(@PathParam("bookId") String bookId) {
 		System.out.println("GET METHOD Request from Client with bookRequest String ............."
 						+ bookId);
 		BookActivity bookActivity = new BookActivity();
-		return bookActivity.getBook(bookId);
+		return bookActivity.searchId(bookId);
 	}
 
 }

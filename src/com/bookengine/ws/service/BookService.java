@@ -10,7 +10,7 @@ import com.bookengine.ws.service.representation.BookRepresentation;
 @WebService
 public interface BookService {
 
-	public Set<BookRepresentation> getBooks();
-	public BookRepresentation getBook(String bookId);
+	public Set<BookRepresentation> searchAllBooks();
+	public BookRepresentation searchId(String bookId);
 
 }
