@@ -18,7 +18,7 @@ public class BookResource implements BookService {
 	@Path("/book")
 	public Set<BookRepresentation> getBooks() {
 		System.out
-				.println("GET METHOD Request for all employees .............");
+				.println("GET METHOD Request for all Books .............");
 		BookActivity bookActivity = new BookActivity();
 		return bookActivity.getBooks();
 	}
@@ -28,7 +28,7 @@ public class BookResource implements BookService {
 	@Path("/book/{bookId}")
 	public BookRepresentation getBook(@PathParam("bookId") String bookId) {
 		System.out
-				.println("GET METHOD Request from Client with employeeRequest String ............."
+				.println("GET METHOD Request from Client with request for Book with bookId ............."
 						+ bookId);
 		BookActivity bookActivity = new BookActivity();
 		return bookActivity.getBook(bookId);
