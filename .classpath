@@ -20,5 +20,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/cguliani/KBWorkspace/BookEngineRS/build/classes/jackson-all-1.9.4.jar"/>
+	<classpathentry kind="lib" path="/HRServicesRS/WebContent/WEB-INF/lib/jackson-all-1.9.4.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
